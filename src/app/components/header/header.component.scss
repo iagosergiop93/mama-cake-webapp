@@ -1,0 +1,55 @@
+@import "../../../styles.scss";
+
+.header-box {
+	border: 1px solid $custom-green;
+	color: #000;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 2rem;
+
+	.header-logo {
+		display: flex;
+		img {
+			height: 120px;
+		}
+		.header-logo-slogan {
+			padding-top: 2rem;
+			span {
+				display: block;
+				margin: 0rem 1rem;
+				font-size: 1.5rem;
+			}
+
+			#second-span {
+				margin-left: 3rem;
+			}
+		}
+	}
+
+	.header-contact {
+		height: 100%;
+		padding: 2rem 0;
+		text-align: end;
+		span {
+			font-size: 1rem;
+			display: block;
+			margin: 10px 0;
+		}
+	}
+}
+
+.header-options {
+	text-align: center;
+	border: 1px solid $custom-green;
+	border-top: none;
+	span {
+		display: inline-block;
+		padding: 1rem 1.5rem;
+	}
+	span:hover {
+		background: $hover-white;
+		cursor: pointer;
+	}
+}

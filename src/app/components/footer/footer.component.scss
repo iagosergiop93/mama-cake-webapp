@@ -1,0 +1,36 @@
+@import "../../../styles.scss";
+
+$footer-section-width: 25rem;
+
+.footer-box {
+	border: 1px solid $custom-green;
+	padding: 1rem 2rem;
+	text-align: center;
+
+	.footer-flex {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		span {
+			display: block;
+			width: 100%;
+			margin: 0.5rem 0;
+			cursor: pointer;
+		}
+
+		.footer-section {
+			width: $footer-section-width;
+		}
+
+	}
+
+	.footer-center-section {
+		display: block;
+		width: $footer-section-width;
+		font-weight: bold;
+		margin: 0 auto;
+	}
+
+}
+

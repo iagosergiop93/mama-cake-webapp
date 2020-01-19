@@ -1,0 +1,18 @@
+.daily-deal {
+	padding: 1rem;
+
+	.daily-deal-content {
+		margin: 1rem;
+		display: flex;
+		flex-wrap: wrap;
+
+		.daily-deal-img {
+			width: 50%;
+			img {
+				width: 100%;
+				max-height: 500px;
+			}
+		}
+	}
+
+}

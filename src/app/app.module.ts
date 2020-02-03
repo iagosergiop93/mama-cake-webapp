@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { DealComponent } from './components/deal/deal.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SliderSectionComponent } from './components/slider-section/slider-section.component';
 
 const routes: Route[] = [
   { path: '', component: HomeComponent }
@@ -19,7 +20,8 @@ const routes: Route[] = [
     HeaderComponent,
     HomeComponent,
     DealComponent,
-    FooterComponent
+    FooterComponent,
+    SliderSectionComponent
   ],
   imports: [
     BrowserModule,

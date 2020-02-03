@@ -1,16 +1,16 @@
 @import "../../../styles.scss";
 
-$footer-section-width: 25rem;
+$footer-section-width: 20rem;
 
 .footer-box {
-	border: 1px solid $custom-green;
+	border-top: 1px solid $custom-green;
 	padding: 1rem 2rem;
 	text-align: center;
 
 	.footer-flex {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: space-around;
 
 		span {
 			display: block;
@@ -36,3 +36,22 @@ $footer-section-width: 25rem;
 
 }
 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+	$footer-section-width: 7rem;
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+	$footer-section-width: 15rem;
+}
+
+// Large devices (desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+	$footer-section-width: 15rem;
+}

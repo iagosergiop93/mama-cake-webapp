@@ -22,6 +22,28 @@ $hover-white: #f3f3f3;
 	border-bottom: 2px solid $custom-green;
 }
 
+.generic-btn {
+	display: block;
+	width: 80%;
+	padding: 1rem;
+	margin: 1rem auto;
+
+	background: $custom-green;
+	border: none;
+	color: #fff;
+	
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.generic-btn:hover {
+	background: #fff;
+	color: #000;
+	border: 1px solid $custom-green;
+	cursor: pointer;
+}
+
+// Section to be used in individual cake
 .cake-description {
 	width: calc(50% - 2rem);
 	padding-left: 2rem;

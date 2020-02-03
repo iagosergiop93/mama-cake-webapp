@@ -1,0 +1,42 @@
+@import "../../../styles.scss";
+
+.slider-section-container {
+	padding: 1rem 0rem;
+
+	.slider-section-content {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: left;
+
+		.slider-item {
+			border: 1px solid $custom-green;
+			width: 20rem;
+			height: 340px;
+			margin-right: 2rem;
+			text-align: center;
+			img {
+				width: 90%;
+				height: 192px;
+				display: block;
+				text-align: center;
+				margin: 0.5rem auto;
+			}
+
+			.slider-item-name {
+				width: 90%;
+				display: block;
+				font-size: 1.1rem;
+				font-weight: lighter;
+				margin: 0 auto;
+			}
+
+			.slider-item-price {
+				width: 90%;
+				display: block;
+				font-size: 1.5rem;
+				margin: 0 auto;
+			}
+
+		}	
+	}
+}

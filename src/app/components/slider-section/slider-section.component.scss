@@ -3,6 +3,22 @@
 .slider-section-container {
 	padding: 1rem 0rem;
 
+	.slider-title-container {
+		position: relative;
+
+		.btn-container {
+			display: inline-block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			
+			span {
+				font-size: 2rem;
+				border: 1px solid #000;
+			}
+		}
+	}
+
 	.slider-section-content {
 		display: flex;
 		flex-wrap: nowrap;
@@ -39,4 +55,22 @@
 
 		}	
 	}
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
 }

@@ -1,34 +1,16 @@
 <div class="slider-section-container">
-	<span class="subtitle">{{ sectionName }}</span>
-	<div class="slider-section-content">
-		<div class="slider-item" style="display: none;">
-			<img src="../../../assets/birthday-cake-sm.jpg">
-			<span class="slider-item-name">Cherry Dream</span>
-			<span class="slider-item-price">$ 20.00</span>
-			<button class="generic-btn">Try cake</button>
+	<div class="slider-title-container">
+		<span class="subtitle">{{ sectionName }}</span>
+		<div class="btn-container" (click)="scrollSlider()">
+			<span class="slider-btn"> > </span>
 		</div>
-		<div class="slider-item">
-			<img src="../../../assets/birthday-cake-sm.jpg">
-			<span class="slider-item-name">Cherry Dream</span>
-			<span class="slider-item-price">$ 20.00</span>
-			<button class="generic-btn">Try cake</button>
-		</div>
-		<div class="slider-item">
-			<img src="../../../assets/birthday-cake-sm.jpg">
-			<span class="slider-item-name">Cherry Dream</span>
-			<span class="slider-item-price">$ 20.00</span>
-			<button class="generic-btn">Try cake</button>
-		</div>
-		<div class="slider-item">
-			<img src="../../../assets/birthday-cake-sm.jpg">
-			<span class="slider-item-name">Cherry Dream</span>
-			<span class="slider-item-price">$ 20.00</span>
-			<button class="generic-btn">Try cake</button>
-		</div>
-		<div class="slider-item" style="display: none;">
-			<img src="../../../assets/birthday-cake-sm.jpg">
-			<span class="slider-item-name">Cherry Dream</span>
-			<span class="slider-item-price">$ 20.00</span>
+	</div>
+
+	<div class="slider-section-content" id="slider-section-content">
+		<div *ngFor="let item of cakes" class="slider-item fade">
+			<img src="{{ item.image }}">
+			<span class="slider-item-name">{{ item.title }}</span>
+			<span class="slider-item-price">$ {{ item.price }}</span>
 			<button class="generic-btn">Try cake</button>
 		</div>
 	</div>
